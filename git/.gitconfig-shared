@@ -19,7 +19,7 @@
 
 [user]
     name="Jake Adams"
-    email="jsdev42@gmail.com"
+    email="jsdev42+github@gmail.com"
 
 [difftool]
     prompt = false
