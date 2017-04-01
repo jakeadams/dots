@@ -1,5 +1,5 @@
-PATH=$PATH:/usr/local/bin
-PATH=$PATH:/usr/local/bin/git
+PATH=/usr/local/bin:$PATH
+PATH=/usr/local/bin/git:$PATH
 PATH=$PATH:/usr/bin
 PATH=$PATH:/bin
 PATH=$PATH:/usr/sbin
