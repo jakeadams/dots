@@ -1,0 +1,64 @@
+alias orig="find . -name '*.orig' -delete"
+alias _='sudo'
+alias g='git'
+alias pbsort='pbpaste | sort | uniq | pbcopy'
+alias pbjson='pbpaste|python -m json.tool|pbcopy'
+alias ohsnap='xcrun simctl io booted screenshot'
+
+# git 
+alias gwip='git add . && gca -m WIP'
+alias gundo='git reset HEAD~1'
+alias gs='git status'
+alias gdb='git fetch -p && for branch in `git branch -vv | grep '\'': gone]'\'' | awk '\''{print $1}'\''`; do git branch -D $branch; done'
+#alias me="git log --author='Jake Adams' --pretty=tformat: --numstat" | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf \"added lines: %s, removed lines: %s, total lines: %s\n\", add, subs, loc }'"
+alias gsubmodule='cd stub-service && git checkout master && git pull && cd ..'
+
+alias gorphan='git fetch -p && for branch in `git branch -vv | grep '\'': gone]'\'' | awk '\''{print $1}'\''`; do echo $branch; done'
+
+  
+# ```git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done```
+
+# List declared aliases, functions
+alias listaliases="alias | sed 's/=.*//'"
+alias listfunctions="declare -f | grep '^[a-z].* ()' | sed 's/{$//'" # show non _prefixed functions
+
+# Tree
+alias 🌳='tree'
+alias tree="tree -A"
+alias treed="tree -d"
+alias tree1="tree -d -L 1"
+alias tree2="tree -d -L 2"
+
+# Network
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ipl="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
+
+# Request using GET, POST, etc. method
+for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
+    alias "$method"="lwp-request -m '$method'"
+done
+
+# Recursively remove Apple meta files
+
+alias cleanupds="find . -type f -name '*.DS_Store' -ls -exec /bin/rm {} \;"
+alias cleanupad="find . -type d -name '.AppleD*' -ls -exec /bin/rm -r {} \;"
+
+# misc
+alias j='jump'
+alias editrc="subl ~/.zshrc"
+alias dots="ls -la | egrep '^\.'"
+alias ls='ls -la'
+
+# Running things
+alias runmock='java -jar wiremock-1.57-standalone.jar --port 8280'
+alias runmock2='java -jar wiremock-standalone-2.0.8-beta.jar --port 8280'
+
+# setting app shortcuts
+alias setsubl='ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl'
+
+
+#killing things
+alias killstub='lsof -t -i tcp:8280 | xargs kill'
+alias fixvideo='sudo killall VDCAssistant'
+
+export GIT_GUI="stree"

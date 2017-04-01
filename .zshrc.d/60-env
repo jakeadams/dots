@@ -1,0 +1,2 @@
+export JAVA_HOME=$(/usr/libexec/java_home)
+export HOMEBREW_GITHUB_API_TOKEN=afb0b5a597afbe3b22568e52fd8cd0ae83c891ba

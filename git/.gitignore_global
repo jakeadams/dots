@@ -1,0 +1,21 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.idea/
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+.zprofile.d/*.local
+.zsh_history
+.zshenv.d/*.local
+.zshrc.d/*.local
