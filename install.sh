@@ -22,6 +22,7 @@ ln -sfv "$DOTFILES_DIR/rc/.gemrc" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig-shared" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 ln -sfv "$DOTFILES_DIR/git/.gitmodules" ~
+ln -sfv "$DOTFILES_DIR" ".dotfiles"
 
 # Package managers & packages
 

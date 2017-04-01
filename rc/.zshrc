@@ -1,3 +1,4 @@
+#!bin/zsh
 # Resolve DOTFILES_DIR (assuming ~/.dotfiles on distros without readlink and/or $BASH_SOURCE/$0)
 READLINK=$(which greadlink || which readlink)
 CURRENT_SCRIPT=${(%):-%N}

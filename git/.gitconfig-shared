@@ -3,7 +3,7 @@
 #     path = .gitconfig-shared
 
 [include]
-    path = ~/dots/git/.gitconfig-shared-local
+    path = ~/.dotfiles/git/.gitconfig-shared-local
 
 [core]
 	excludesfile = ~/.gitignore_global
