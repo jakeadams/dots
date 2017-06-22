@@ -4,6 +4,7 @@ alias g='git'
 alias pbsort='pbpaste | sort | uniq | pbcopy'
 alias pbjson='pbpaste|python -m json.tool|pbcopy'
 alias ohsnap='xcrun simctl io booted screenshot'
+alias spotlight='sudo mdutil -E /'
 
 # git 
 alias gwip='git add . && gca -m WIP'

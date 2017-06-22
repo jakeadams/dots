@@ -5,6 +5,8 @@
 [include]
     path = ~/.dotfiles/git/.gitconfig-shared-local
 
+[help]
+    autocorrect = 1
 [core]
 	excludesfile = ~/.gitignore_global
 	editor = subl -n -w
@@ -26,6 +28,7 @@
 
 [mergetool]
     prompt = false
+    keepBackup = false
 
 [push]
     default = simple
